@@ -1,7 +1,7 @@
 
 FROM mono:latest
 # define Bot Version so it gets Updated 
-ENV MFBOT_VERSION=5.4.2.1
+ENV MFBOT_VERSION=5.4.3.0
 
 # install deps
 RUN apt-get update && apt-get install --no-install-recommends -y wget  && rm -rf /var/lib/apt/lists/*
