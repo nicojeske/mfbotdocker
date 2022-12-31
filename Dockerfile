@@ -7,7 +7,7 @@ ENV MFBOT_VERSION=5.4.3.0
 RUN apt-get update && apt-get install --no-install-recommends -y wget  && rm -rf /var/lib/apt/lists/*
 
 # download latest bot binary
-RUN mkdir /bot && wget -q -O /bot/MFBot https://download.mfbot.de/latest/MFBot_Konsole.exe && chmod +x /bot/MFBot.exe
+RUN mkdir /bot && wget -q -O /bot/MFBot.exe https://download.mfbot.de/latest/MFBot_Konsole.exe && chmod +x /bot/MFBot.exe
 
 # run in /data
 WORKDIR /data
